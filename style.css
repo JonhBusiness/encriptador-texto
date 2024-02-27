@@ -293,7 +293,7 @@ textarea:focus {
   .seccion2_right {
     margin-left: 0%;
     display: flex;
-    width: 80%;
+    width: 79%;
     height: 200%;
     justify-content: flex-end;
     flex-direction: column-reverse;
@@ -330,7 +330,7 @@ textarea:focus {
   .seccion2_right {
     margin-left: 0%;
     height: 50%;
-    width: 96%;
+    width: 95%;
   }
   .contenedor-resultado {
     display: flex;
