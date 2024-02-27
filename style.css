@@ -66,7 +66,7 @@ textarea {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  width: 100%;
+  width: 79%;
   height: 100%;
   font-size: 25px;
   resize: none;
@@ -144,7 +144,7 @@ textarea:focus {
   transition: color 0.5s ease-in-out; /* Transición suave de color */
 }
 .contenedor-botones {
-  width: 120%;
+  width: 100%;
   display: flex;
   margin-top: 10px;
   gap: 15px;
@@ -293,7 +293,7 @@ textarea:focus {
   .seccion2_right {
     margin-left: 0%;
     display: flex;
-    width: 95%;
+    width: 80%;
     height: 200%;
     justify-content: flex-end;
     flex-direction: column-reverse;
@@ -315,7 +315,7 @@ textarea:focus {
     gap: 0;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 480px) {
   .container {
     display: block;
     min-width: 375px;
@@ -361,6 +361,9 @@ textarea:focus {
   .cajabotones {
     width: 100%;
     gap: 1rem;
+  }
+    textarea {
+    width: 95%;
   }
 }
 
