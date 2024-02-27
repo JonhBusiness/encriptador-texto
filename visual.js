@@ -15,9 +15,10 @@ document.addEventListener("DOMContentLoaded", function () {
       p.style.color = "#495057";
       text.className = "textarea";
       text.className = "cajatexto";
+      text.style.background = "transparent";
     } else {
       document.body.style.background = "linear-gradient(to bottom, #3359a3, #25467f, #1a335d, #11213d, #070f1f)";
-      cajatexto.style.background = "white";
+      text.style.background = "white";
       p.style.color = "#9ab6ee";
       text.className = "estilo";
     }
