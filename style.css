@@ -60,6 +60,7 @@ header .logo {
 .contenedorcajatexto {
   height: 600px;
   width: 100%;
+
   /* background-color: blanchedalmond; */
 }
 textarea {
@@ -328,7 +329,7 @@ textarea:focus {
     margin-left: 0%;
   }
   .seccion2_right {
-    margin-left: 0%;
+    margin-left: 3%;
     height: 50%;
     width: 95%;
   }
@@ -363,7 +364,7 @@ textarea:focus {
     gap: 1rem;
   }
   textarea {
-    width: 95%;
+    width: 100%;
   }
 }
 
