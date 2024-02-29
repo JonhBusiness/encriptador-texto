@@ -45,7 +45,6 @@ function desencriptar() {
     return;
   } else if (cajatexto !== cajatexto.toLowerCase()) {
     alerta.classList.add("error");
-
     setTimeout(() => {
       alerta.classList.remove("error");
     }, 3000);
@@ -130,6 +129,7 @@ btnCopiar.addEventListener("click", () => {
     btnCopiar.value = "Copiar";
     btnCopiar.classList.remove("presionado");
   }, 1000);
+  botonDesencriptar.removeAttribute("disabled");
 });
 
 text.addEventListener("input", function () {
