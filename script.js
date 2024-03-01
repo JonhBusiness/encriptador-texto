@@ -36,6 +36,7 @@ function encriptar() {
 
   contenedoresult.style.display = "block";
   contenedorCopiar.style.display = "block";
+  botonDesencriptar.disabled = true;
 }
 
 function desencriptar() {
@@ -50,6 +51,7 @@ function desencriptar() {
     }, 3000);
     return;
   }
+
   ocultarAdelante();
   resultado.textContent = desencriptarTexto(cajatexto);
 
@@ -129,10 +131,20 @@ btnCopiar.addEventListener("click", () => {
     btnCopiar.value = "Copiar";
     btnCopiar.classList.remove("presionado");
   }, 1000);
-  botonDesencriptar.removeAttribute("disabled");
 });
 
-text.addEventListener("input", function () {
+// text.addEventListener("input", function () {
+//   if (text.value === "") {
+//     contenedoresult.style.display = "none";
+//     contenedorCopiar.style.display = "none";
+//     munieco.classList.remove("ocultar");
+//     contenedor.classList.remove("ocultar");
+//     munieco.classList.remove("mostrar");
+//     contenedor.classList.remove("mostrar");
+//   }
+// });
+
+text.addEventListener("keyup", function () {
   if (text.value === "") {
     contenedoresult.style.display = "none";
     contenedorCopiar.style.display = "none";
@@ -140,5 +152,10 @@ text.addEventListener("input", function () {
     contenedor.classList.remove("ocultar");
     munieco.classList.remove("mostrar");
     contenedor.classList.remove("mostrar");
+    botonDesencriptar.disabled = true;
+  } else if (resultado.value === text.value) {
+    botonDesencriptar.removeAttribute("disabled");
+  } else {
+    botonDesencriptar.disabled = true;
   }
 });
